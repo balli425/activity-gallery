@@ -184,13 +184,16 @@ function Itinerary() {
                             </div>
                         </div>
                         <div className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col hover:-translate-y-1 transition-transform">
-                            <div className="h-48 bg-cover bg-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1520406853248-18f676d393ca?auto=format&fit=crop&q=80&w=800')" }}>
+                            <div className="h-48 bg-cover bg-center relative" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1590373407331-fa94d134138e?auto=format&fit=crop&q=80&w=800')" }}>
                                 <div className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded text-sm font-bold">13:00 - 16:00</div>
+                                <div className="absolute bottom-0 left-0 w-full p-4 img-overlay" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 100%)' }}>
+                                    <p className="text-white text-sm font-bold">傳統陶藝工藝體驗</p>
+                                </div>
                             </div>
                             <div className="p-5 flex-grow flex flex-col">
-                                <h3 className="text-xl font-bold text-gray-800">水里蛇窯陶藝文化園區</h3>
-                                <p className="text-gray-600 mb-4 text-sm">陶藝感受、休閒慢活時間。</p>
-                                <a href="https://www.snakekiln.com.tw" target="_blank" className="block w-full text-center bg-emerald-50 text-emerald-700 py-2 rounded-lg text-sm font-medium hover:bg-emerald-100 italic">官網介紹</a>
+                                <h3 className="text-xl font-bold text-gray-800 mb-2">水里蛇窯陶藝文化園區</h3>
+                                <p className="text-gray-600 mb-4 text-sm font-medium">感受百年蛇窯的歷史底蘊，體驗拉坯與捏陶的樂趣。</p>
+                                <a href="https://www.snakekiln.com.tw" target="_blank" className="block w-full text-center bg-emerald-50 text-emerald-700 py-2 rounded-lg text-sm font-medium hover:bg-emerald-100 italic mt-auto">官網介紹</a>
                             </div>
                         </div>
                     </div>
