@@ -30,6 +30,10 @@ jobs:
           cd client
           npm install
           npm run build
+          # Copy data and images for static access
+          cp ../data.json ./dist/
+          mkdir -p ./dist/uploads
+          cp -r ../uploads/* ./dist/uploads/ || true
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

@@ -15,15 +15,22 @@ export default function EventList() {
     };
 
     useEffect(() => {
-        fetch('/api/events')
+        // Try fetching from public/data.json which we'll provide for static builds
+        fetch('./data.json')
             .then(res => res.json())
             .then(data => {
                 setEvents(data);
                 setLoading(false);
             })
             .catch(err => {
-                console.error(err);
-                setLoading(false);
+                console.error('Static fetch fail, trying API:', err);
+                // Fallback to local dev API
+                fetch('/api/events')
+                    .then(res => res.json())
+                    .then(data => {
+                        setEvents(data);
+                        setLoading(false);
+                    });
             });
     }, []);
 
