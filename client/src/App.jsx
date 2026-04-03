@@ -153,8 +153,8 @@ function Itinerary() {
                                 <h3 className="text-xl font-bold text-gray-800 mb-2">午餐：日月潭周邊美食</h3>
                                 <p className="text-gray-600 text-sm mb-4">131 多肉花園餐廳 或 阿豐師餐廳。</p>
                                 <div className="space-y-2 mt-auto">
-                                    <a href="https://www.facebook.com/p/131%E5%A4%9A%E8%82%89%E5%9C%92%E8%97%9D-100063991209378/" target="_blank" className="block w-full text-center bg-orange-50 text-orange-700 py-2 rounded-lg text-sm font-medium hover:bg-orange-100 italic">131 多肉花園官網</a>
-                                    <a href="https://www.bigfang.tw/blog/post/afengshi-sunmoonlake" target="_blank" className="block w-full text-center bg-gray-50 text-gray-600 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 italic">阿豐師官網介紹</a>
+                                    <a href="https://sillycoupleblog.tw/nantou-yuchi-food-131diy-2504/" target="_blank" className="block w-full text-center bg-orange-50 text-orange-700 py-2 rounded-lg text-sm font-medium hover:bg-orange-100 italic">131 多肉花園介紹</a>
+                                    <a href="https://www.bigfang.tw/blog/post/afengshi-smlake" target="_blank" className="block w-full text-center bg-gray-50 text-gray-600 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 italic">阿豐師官網介紹</a>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +229,7 @@ function Itinerary() {
                                     <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-orange-500 border-2 border-white"></div>
                                     <div className="text-sm font-bold text-orange-600">8/2 12:00</div>
                                     <div className="font-bold text-gray-800">日月潭午餐</div>
-                                    <a href="https://www.bigfang.tw/blog/post/afengshi-sunmoonlake" target="_blank" className="text-xs text-blue-500 hover:underline">官網介紹</a>
+                                    <a href="https://www.bigfang.tw/blog/post/afengshi-smlake" target="_blank" className="text-xs text-blue-500 hover:underline">官網介紹</a>
                                 </div>
                                 <div className="relative pl-6">
                                     <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-yellow-500 border-2 border-white"></div>
