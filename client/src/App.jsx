@@ -18,7 +18,7 @@ function Itinerary() {
             if (!L) return;
 
             mapInstance.current = L.map('taiwan-map').setView([24.2, 120.8], 8);
-            
+
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; OpenStreetMap contributors'
             }).addTo(mapInstance.current);
@@ -34,7 +34,7 @@ function Itinerary() {
             ];
 
             const latlngs = locations.map(loc => [loc.lat, loc.lng]);
-            L.polyline(latlngs, {color: '#1e40af', weight: 4, opacity: 0.7, dashArray: '8, 8'}).addTo(mapInstance.current);
+            L.polyline(latlngs, { color: '#1e40af', weight: 4, opacity: 0.7, dashArray: '8, 8' }).addTo(mapInstance.current);
 
             locations.forEach((loc) => {
                 const marker = L.marker([loc.lat, loc.lng]).addTo(mapInstance.current);
@@ -47,7 +47,7 @@ function Itinerary() {
                     </div>
                 `);
             });
-            
+
             mapInstance.current.fitBounds(L.polyline(latlngs).getBounds(), { padding: [50, 50] });
         }
 
@@ -70,7 +70,7 @@ function Itinerary() {
             </header>
 
             <main className="max-w-5xl mx-auto px-4">
-                
+
                 {/* Day Tabs */}
                 <div className="flex flex-wrap justify-center gap-2 mb-8">
                     <button onClick={() => showDay(1)} className={`day-tab px-8 py-3 rounded-full shadow-md transition-all ${currentDay === 1 ? 'bg-[#1e40af] text-white font-bold scale-105' : 'bg-white text-blue-800'}`}>8/1 (六)</button>
@@ -89,7 +89,7 @@ function Itinerary() {
                             <div className="p-5 flex-grow">
                                 <h3 className="text-xl font-bold text-gray-800 mb-2">新竹出發 (國道風光)</h3>
                                 <p className="text-gray-600 text-sm">出發地點：新竹縣政府。</p>
-                                <p className="text-gray-600 mt-2 text-sm font-bold">早餐：素飯糰。</p>
+                                <p className="text-gray-600 mt-2 text-sm font-bold">早餐：葷素飯糰。</p>
                                 <div className="mt-4 flex items-center text-sm text-gray-500"><i className="fa-solid fa-bus mr-2"></i>車程約 1 - 1.5 小時</div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ function Itinerary() {
                             <div className="p-5 flex-grow flex flex-col">
                                 <h3 className="text-xl font-bold text-gray-800 mb-2 italic">宿：溪頭福華飯店</h3>
                                 <p className="text-gray-600 text-sm mb-4">晚餐：雲杉自助餐。溪頭漫步。</p>
-                                <a href="https://www.howard-hotels.com.tw/zh_TW/HotelVacation/145" target="_blank" className="block w-full text-center bg-indigo-50 text-indigo-700 py-2 rounded-lg text-sm font-medium hover:bg-indigo-100 italic">飯店官網</a>
+                                <a href="https://www.howard-hotels.com.tw/zh_TW/HotelVacation/145" target="_blank" className="block w-full text-center bg-indigo-50 text-indigo-700 py-2 rounded-lg text-sm font-medium hover:bg-indigo-100 italic">官網介紹</a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@ function Itinerary() {
                                 <p className="text-gray-600 text-sm mb-4">131 多肉花園餐廳 或 阿豐師餐廳。</p>
                                 <div className="space-y-2 mt-auto">
                                     <a href="https://www.facebook.com/p/131%E5%A4%9A%E8%82%89%E5%9C%92%E8%97%9D-100063991209378/" target="_blank" className="block w-full text-center bg-orange-50 text-orange-700 py-2 rounded-lg text-sm font-medium hover:bg-orange-100 italic">131 多肉花園官網</a>
-                                    <a href="https://www.bigfang.tw/blog/post/alengshi-smiake" target="_blank" className="block w-full text-center bg-gray-50 text-gray-600 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 italic">阿豐師介紹連結</a>
+                                    <a href="https://www.bigfang.tw/blog/post/afengshi-sunmoonlake" target="_blank" className="block w-full text-center bg-gray-50 text-gray-600 py-2 rounded-lg text-sm font-medium hover:bg-gray-100 italic">阿豐師官網介紹</a>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ function Itinerary() {
                             <div className="p-6">
                                 <h3 className="text-2xl font-bold text-gray-800 mb-3">宿：涵碧樓 (The Lalu)</h3>
                                 <p className="text-gray-600 text-sm mb-4">日月潭環湖步道。享受頂級涵碧樓晚餐與渡假氛圍。</p>
-                                <a href="https://www.thelalu.com.tw/zh-tw" target="_blank" className="block w-full text-center bg-indigo-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-indigo-800 italic">涵碧樓官網</a>
+                                <a href="https://www.thelalu.com.tw/zh-tw" target="_blank" className="block w-full text-center bg-indigo-900 text-white py-2 rounded-lg text-sm font-medium hover:bg-indigo-800 italic">官網介紹</a>
                             </div>
                         </div>
                     </div>
@@ -229,13 +229,13 @@ function Itinerary() {
                                     <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-orange-500 border-2 border-white"></div>
                                     <div className="text-sm font-bold text-orange-600">8/2 12:00</div>
                                     <div className="font-bold text-gray-800">日月潭午餐</div>
-                                    <div className="text-xs text-gray-500">131 多肉花園 / 阿豐師</div>
+                                    <a href="https://www.bigfang.tw/blog/post/afengshi-sunmoonlake" target="_blank" className="text-xs text-blue-500 hover:underline">官網介紹</a>
                                 </div>
                                 <div className="relative pl-6">
                                     <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-yellow-500 border-2 border-white"></div>
                                     <div className="text-sm font-bold text-yellow-600">8/2 14:30</div>
                                     <div className="font-bold text-gray-800">涵碧樓</div>
-                                    <a href="https://www.thelalu.com.tw/zh-tw" target="_blank" className="text-xs text-blue-500 hover:underline">飯店官網</a>
+                                    <a href="https://www.thelalu.com.tw/zh-tw" target="_blank" className="text-xs text-blue-500 hover:underline">官網介紹</a>
                                 </div>
                                 <div className="relative pl-6">
                                     <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white"></div>
